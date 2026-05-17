@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <radialGradient id="appleBody" cx="36%" cy="28%" r="70%">
+      <stop offset="0" stop-color="#fff0c9"/>
+      <stop offset=".24" stop-color="#ff7566"/>
+      <stop offset=".72" stop-color="#e93131"/>
+      <stop offset="1" stop-color="#9d171f"/>
+    </radialGradient>
+    <linearGradient id="appleLeaf" x1="31" x2="77" y1="12" y2="38">
+      <stop stop-color="#bdf26b"/>
+      <stop offset="1" stop-color="#359445"/>
+    </linearGradient>
+  </defs>
+  <path fill="#593322" d="M61 17c9 7 11 17 7 29l-10-2c5-11 3-18-4-24l7-3Z"/>
+  <path fill="url(#appleLeaf)" d="M70 24c11-16 28-13 37-5-7 14-23 19-37 5Z"/>
+  <path fill="url(#appleBody)" d="M64 35c12-12 38-7 47 14 11 25-7 64-32 68-8 1-11-4-17-4s-10 5-18 4c-25-4-43-43-32-68 9-21 35-26 52-14Z"/>
+  <path fill="#fff8dd" fill-opacity=".45" d="M25 53c5-11 18-16 29-12-13 7-20 18-24 36-8-6-10-16-5-24Z"/>
+  <path fill="#6f1015" fill-opacity=".35" d="M88 48c15 16 8 48-12 58 26-3 41-38 30-58-4-8-11-12-18-13 3 4 3 8 0 13Z"/>
+</svg>

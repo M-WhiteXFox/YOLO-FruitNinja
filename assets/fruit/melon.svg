@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <radialGradient id="melonBody" cx="35%" cy="28%" r="75%">
+      <stop offset="0" stop-color="#efffd8"/>
+      <stop offset=".25" stop-color="#87df91"/>
+      <stop offset=".76" stop-color="#25a86e"/>
+      <stop offset="1" stop-color="#146744"/>
+    </radialGradient>
+  </defs>
+  <path fill="url(#melonBody)" d="M116 65c0 31-22 52-52 52S12 96 12 65s22-54 52-54 52 23 52 54Z"/>
+  <path fill="#ffd17c" fill-opacity=".45" d="M25 61c5-21 21-34 43-36-18 13-27 36-30 67-10-7-16-18-13-31Z"/>
+  <g fill="none" stroke="#c6ff85" stroke-linecap="round" stroke-opacity=".58" stroke-width="5">
+    <path d="M43 20c-10 25-10 61 3 90"/>
+    <path d="M68 14c-5 31-4 67 6 99"/>
+    <path d="M92 27c2 21-1 48-12 76"/>
+  </g>
+  <path fill="#24451f" d="M59 15c7 6 8 13 3 21l-8-3c4-7 3-11-2-15l7-3Z"/>
+  <path fill="#a7e35f" d="M66 21c9-11 24-8 31-1-8 10-21 13-31 1Z"/>
+</svg>

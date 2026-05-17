@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>水果忍者</title>
+    <link rel="stylesheet" href="./fruit-yolo.css" />
+  </head>
+  <body class="yolo-page">
+    <div class="fruit-shell yolo-shell">
+      <header class="fruit-topbar">
+        <div class="title-block">
+          <h1>水果忍者</h1>
+        </div>
+
+        <div class="top-actions">
+          <button class="primary-button" id="startGameButton" type="button">开局</button>
+          <button class="secondary-button detector-button" id="startCameraButton" type="button">启动识别</button>
+          <button class="secondary-button music-button" id="musicButton" type="button" aria-pressed="true">音乐开</button>
+        </div>
+
+        <div class="live-hud" aria-label="实时战况">
+          <div class="hud-tile hud-score" id="scoreTile">
+            <span>当前分数</span>
+            <strong id="scoreValue">0</strong>
+            <b class="score-multiplier" id="scoreMultiplier">x2</b>
+          </div>
+          <div class="hud-tile hud-timer" id="timerTile">
+            <span>倒计时</span>
+            <strong id="lifeValue">45s</strong>
+          </div>
+        </div>
+
+        <div class="special-status-row" id="specialStatusRow" aria-label="香蕉状态"></div>
+      </header>
+
+      <main class="game-layout">
+        <section class="game-stage" aria-label="YOLO 水果忍者游戏区域">
+          <div class="canvas-frame">
+            <canvas id="gameCanvas" aria-label="YOLO 水果忍者画布"></canvas>
+            <div class="center-message" id="centerMessage">YOLO READY</div>
+            <div class="start-overlay" id="startOverlay" aria-label="开始界面">
+              <section class="leaderboard-block start-leaderboard">
+                <div class="leaderboard-heading">
+                  <p class="eyebrow">Ranking</p>
+                  <h2>本次排行榜</h2>
+                </div>
+                <ol class="leaderboard-list" id="leaderboardList"></ol>
+              </section>
+
+              <section class="start-card">
+                <div class="start-main">
+                  <p class="eyebrow">45 秒挑战</p>
+                  <h2>准备开局</h2>
+                  <div class="start-score-row" aria-label="成绩概览">
+                    <div>
+                      <span>本次分数</span>
+                      <strong id="menuScoreValue">0</strong>
+                    </div>
+                    <div>
+                      <span>最高分</span>
+                      <strong id="menuBestValue">0</strong>
+                    </div>
+                  </div>
+                  <label class="player-label" for="playerNameInput">班级姓名</label>
+                  <div class="player-row">
+                    <input id="playerNameInput" name="playerName" type="text" maxlength="24" autocomplete="name" placeholder="例如：三年二班 王同学" />
+                    <button class="primary-button" id="startRoundButton" type="button">开始回合</button>
+                  </div>
+                  <p class="start-error" id="startError" aria-live="polite"></p>
+                </div>
+              </section>
+            </div>
+            <div class="settlement-overlay is-hidden" id="settlementOverlay" aria-label="结算画面">
+              <section class="settlement-card">
+                <p class="eyebrow">Round Clear</p>
+                <h2 id="settlementName">未命名</h2>
+                <div class="settlement-score">
+                  <span>本局分数</span>
+                  <strong id="settlementScore">0</strong>
+                </div>
+                <p>5 秒后返回主页面</p>
+              </section>
+            </div>
+          </div>
+        </section>
+
+        <aside class="side-panel" aria-label="YOLO 输入与检测状态">
+          <section class="panel-block camera-block">
+            <div class="panel-heading">
+              <p class="eyebrow">Detector</p>
+              <h2>人体骨骼</h2>
+            </div>
+            <div class="camera-frame">
+              <video id="cameraPreview" playsinline muted></video>
+              <canvas id="handOverlay"></canvas>
+              <div class="camera-placeholder" id="cameraPlaceholder">等待视频</div>
+            </div>
+            <div class="hand-status">
+              <div>
+                <span>左腕</span>
+                <strong id="leftHandStatus">等待</strong>
+              </div>
+              <div>
+                <span>右腕</span>
+                <strong id="rightHandStatus">等待</strong>
+              </div>
+            </div>
+          </section>
+
+          <section class="panel-block">
+            <div class="panel-heading">
+              <p class="eyebrow">Mode</p>
+              <h2>节奏</h2>
+            </div>
+            <div class="difficulty-row" id="difficultyRow">
+              <button class="difficulty-button is-active" type="button" data-level="normal">巡航</button>
+              <button class="difficulty-button" type="button" data-level="fast">狂飙</button>
+            </div>
+          </section>
+        </aside>
+      </main>
+    </div>
+
+    <script type="module" src="./fruit-yolo.js"></script>
+  </body>
+</html>

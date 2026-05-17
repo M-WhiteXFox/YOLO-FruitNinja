@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <radialGradient id="berryBody" cx="36%" cy="28%" r="70%">
+      <stop offset="0" stop-color="#ffe1ff"/>
+      <stop offset=".25" stop-color="#ef8fff"/>
+      <stop offset=".74" stop-color="#b94fd6"/>
+      <stop offset="1" stop-color="#69218a"/>
+    </radialGradient>
+  </defs>
+  <path fill="#58a044" d="M58 31 43 16l19 7 9-16 2 18 20-6-15 14 15 10-20-2-7 17-6-17-20 3 18-13Z"/>
+  <path fill="url(#berryBody)" d="M107 71c0 27-19 47-44 47S19 98 19 71c0-29 20-44 44-44s44 15 44 44Z"/>
+  <path fill="#fff2ff" fill-opacity=".48" d="M31 61c3-14 16-23 31-24-15 9-23 23-25 43-6-5-8-12-6-19Z"/>
+  <g fill="#7b2c88" fill-opacity=".32">
+    <circle cx="74" cy="53" r="4"/>
+    <circle cx="90" cy="68" r="4"/>
+    <circle cx="77" cy="88" r="3.5"/>
+    <circle cx="51" cy="95" r="3.5"/>
+    <circle cx="45" cy="64" r="3.5"/>
+  </g>
+</svg>

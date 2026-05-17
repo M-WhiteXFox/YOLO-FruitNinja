@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <radialGradient id="limeBody" cx="35%" cy="26%" r="74%">
+      <stop offset="0" stop-color="#f9ffd1"/>
+      <stop offset=".24" stop-color="#cbf668"/>
+      <stop offset=".76" stop-color="#67bd3d"/>
+      <stop offset="1" stop-color="#2e812e"/>
+    </radialGradient>
+  </defs>
+  <path fill="url(#limeBody)" d="M115 62c2 30-20 53-49 55-30 2-54-18-56-48C8 39 30 14 60 12c30-2 53 20 55 50Z"/>
+  <path fill="#277529" d="M57 18c8 5 10 12 6 20l-8-2c3-7 1-11-4-15l6-3Z"/>
+  <path fill="#9ee863" d="M65 24c9-12 25-9 32-2-8 11-21 14-32 2Z"/>
+  <path fill="#f9ffd6" fill-opacity=".44" d="M26 44c10-16 28-22 45-15-22 6-34 22-41 45-7-8-9-20-4-30Z"/>
+  <path fill="none" stroke="#dfff91" stroke-opacity=".42" stroke-width="4" d="M28 81c22 13 49 10 71-8"/>
+</svg>
