@@ -1,6 +1,7 @@
 # YOLO 水果忍者
 
 基于 MediaPipe Pose 实时人体骨骼识别、HTML5 Canvas 动态渲染和本地 Node JSON API 实现的体感水果忍者游戏。
+这是一个面对社团招新产生的项目，可以在本地电脑运行，让参与的人快速体验 yolo 体感游戏，其中背景音乐为 Gemini 3 Pro 生成。
 
 ## 功能特性
 
@@ -128,7 +129,7 @@ node --check fruit-yolo.js
 公开发布前建议完成：
 
 - 添加明确的 `LICENSE` 文件。
-- 替换或确认第三方媒体资源授权，尤其是 `Halfbrick - Welcome, Fruit Ninja.mp3`。
+- 替换或确认第三方媒体资源授权，尤其是 `background.mp3`。
 - 确认本地运行数据不会提交到仓库。
 - 检查 CDN 使用和 MediaPipe 模型下载是否符合部署环境要求。
 

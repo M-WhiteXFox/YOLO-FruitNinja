@@ -58,7 +58,7 @@ const SPECIAL_TYPES_ORDER = [
   { key: "double", special: "double", side: "right" },
   { key: "frenzy", special: "frenzy", side: "left" },
 ];
-const BACKGROUND_MUSIC_SRC = "./Halfbrick - Welcome, Fruit Ninja.mp3";
+const BACKGROUND_MUSIC_SRC = "./background.mp3";
 const BACKGROUND_MUSIC_VOLUME = 0.34;
 const LEADERBOARD_LIMIT = 8;
 
